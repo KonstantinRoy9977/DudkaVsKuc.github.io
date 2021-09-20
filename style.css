@@ -1,0 +1,59 @@
+.game {
+    width: 600px;
+    height: 200px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    margin: 312px 456px 26px;
+}
+
+#dino {
+    width: 90px;
+    height: 140px;
+    background-image: url(Kuc.png);
+    background-size: 90px 140px;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 57px;
+}
+
+#cactus {
+    width: 100px;
+    height: 160px;
+    background-image: url(Dudka.png);
+    background-size: 100px 160px;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -101px;
+    left: 580px;
+    animation: cactusMov 2s infinite linear;
+}
+
+@keyframes cactusMov {
+    0% {
+        left: 580px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+.jump {
+    animation: jump 0.5s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 57px;
+    }
+    30% {
+        top: -113px;
+    }
+    50% {
+        top: -337px;
+    }
+    80% {
+        top: -113px;
+    }
+    100% {
+        top: 57px;
+    }
+}
